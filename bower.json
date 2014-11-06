@@ -1,0 +1,22 @@
+{
+  "name": "geocoding",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ywarezk/geocoding",
+  "authors": [
+    "ywarezk <ywarezk@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.0"
+  }
+}
