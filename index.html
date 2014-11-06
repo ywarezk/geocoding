@@ -17,21 +17,50 @@
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 		<script src="bower_components/prettyprint/prettyprint.js"></script>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"  />
 		<script type="text/javascript" src="js/geocoding.js"></script>
 	</head>
 	<body>
 		
-		<h1>Geocoding services</h1>
-		
-		<!-- Begin google geocoding -->
-		<div class="google-geocoding">
-			<h2>Google Geocoding</h2>
-			<input type="text" id="google-places" />
-			<h3>Place picked result</h3>
-			<div class="result">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Geocoding services</h1>
+				</div>
 			</div>
+			
+			<!-- Begin google geocoding -->	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="google-geocoding">
+						<h2>Google Geocoding</h2>
+						<input type="text" id="google-places" />
+						<h3>Place picked result</h3>
+						<div class="result">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End google geocoding -->
+		
+			<!-- Begin mapbox geocoding -->	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="mapbox-geocoding">
+						<h2>MapBox Geocoding</h2>
+						<input type="text" id="mapbox-places" />
+						<div id="autocomplete-mapbox">
+						</div>
+						<h3>Place picked result</h3>
+						<div class="result">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<!-- End mapbox geocoding -->
+			
 		</div>
-		<!-- End google geocoding -->
 		
 	</body>
 </html>
