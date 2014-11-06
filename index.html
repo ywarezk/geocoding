@@ -14,9 +14,10 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Comparison between different geocoding services">
 		<title>Geocoding tester</title>
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
-		<script type="text/javascript" src="js/geocoding.js"></script>>
+		<script src="bower_components/prettyprint/prettyprint.js"></script>
+		<script type="text/javascript" src="js/geocoding.js"></script>
 	</head>
 	<body>
 		
@@ -25,7 +26,10 @@
 		<!-- Begin google geocoding -->
 		<div class="google-geocoding">
 			<h2>Google Geocoding</h2>
-			
+			<input type="text" id="google-places" />
+			<h3>Place picked result</h3>
+			<div class="result">
+			</div>
 		</div>
 		<!-- End google geocoding -->
 		

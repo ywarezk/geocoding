@@ -15,8 +15,16 @@
 /**
  * constructor
  */
-function init(){
+function _init(){
     
+    //init google places auto complete
+    var input = document.getElementById('google-places');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    google.maps.event.addListener(autocomplete, 'place_changed', function(details) {
+        var place = autocomplete.getPlace();
+        var table = prettyPrint(place);
+        $('.google-geocoding .result').append(table);
+    });    
 };
 
 /***************************
