@@ -18,6 +18,8 @@
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 		<script src="bower_components/prettyprint/prettyprint.js"></script>
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"  />
+		<script src="http://js.arcgis.com/3.11/"></script>
+		<script src="https://gist.githubusercontent.com/masylum/1188524/raw/8fc37c3e3bf04c8a5de3b12184b53817293102f1/autocomplete_location.js"></script>
 		<script type="text/javascript" src="js/geocoding.js"></script>
 	</head>
 	<body>
@@ -59,6 +61,65 @@
 				</div>
 			</div>
 			<!-- End mapbox geocoding -->
+			
+			<!-- Begin bing geocoding -->	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="mapbox-geocoding">
+						<h2>Bing Geocoding</h2>
+						<p>
+							So this was the result I got from querying tel aviv
+						</p>
+						<div id="bing-result1">
+						</div>
+						<p>
+							And this is the result from querying pinsker 32 which is an address in Tel Aviv
+						</p>
+						<div id="bing-result2">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<!-- End bing geocoding -->
+			
+			<!-- Begin open street map -->	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="mapbox-geocoding">
+						<h2>Open street map Geocoding</h2>
+						<input type="text" id="openstreet-places" />
+						<div id="autocomplete-openstreet">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<!-- End open street map -->
+			
+			<!-- Begin ArcGIS -->	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="arcgis-geocoding">
+						<h2>ArcGIS map Geocoding</h2>
+						<input type="text" id="arcgis-places" />
+						<div id="autocomplete-arcgis">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<!-- End ArcGis -->
+			
+			<!-- Begin Yahoo -->	
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="yahoo-geocoding">
+						<h2>Yahoo Geocoding</h2>
+						<input type="text" id="yahoo-places" />
+						<div id="autocomplete-yahoo">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<!-- End Yahoo -->
 			
 		</div>
 		
